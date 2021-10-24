@@ -1,0 +1,31 @@
+Using these specs:
+replicaCount: 8
+maxReplicaCount: 48
+
+resources:
+  requests:
+    memory: "160Mi"
+    cpu: "100m"
+  limits:
+    memory: "720Mi"
+    cpu: "200m"
+
+
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Target URL:          https://img.mbot.dev/resize/image/https://img.ifunny.co/images/eb450336b98c20192b39509855e8f071e2aa2deeadfabf99f6841a31273d8c0f_1.jpg?height=300
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Max requests:        6000
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Concurrency level:   50
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Agent:               none
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Completed requests:  6000
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Total errors:        0
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Total time:          210.677944498 s
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Requests per second: 28
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Mean latency:        1742.4 ms
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO Percentage of the requests served within a certain time
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO   50%      1067 ms
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO   90%      3959 ms
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO   95%      5337 ms
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO   99%      8005 ms
+[Sun Oct 24 2021 16:07:09 GMT-0400 (Eastern Daylight Time)] INFO  100%      13414 ms (longest request)
+

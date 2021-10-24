@@ -1,0 +1,34 @@
+With:
+replicaCount: 8
+maxReplicaCount: 256
+
+resources:
+  requests:
+    memory: "500Mi"
+    cpu: "500m"
+  limits:
+    memory: "1000Mi"
+    cpu: "900m"
+
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Target URL:          https://img.mbot.dev/resize/image/https://img.ifunny.co/images/eb450336b98c20192b39509855e8f071e2aa2deeadfabf99f6841a31273d8c0f_1.jpg?height=300
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Max requests:        6000
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Concurrency level:   50
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Agent:               none
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Completed requests:  6000
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Total errors:        6
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Total time:          113.602092414 s
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Requests per second: 53
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Mean latency:        944.4 ms
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO Percentage of the requests served within a certain time
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO   50%      456 ms
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO   90%      1326 ms
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO   95%      4734 ms
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO   99%      10297 ms
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO  100%      18291 ms (longest request)
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO  100%      18291 ms (longest request)
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO
+[Sun Oct 24 2021 16:15:01 GMT-0400 (Eastern Daylight Time)] INFO   502:   6 errors
+

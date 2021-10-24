@@ -1,0 +1,43 @@
+# I'm just guessing on this one, but seems like a decent baseline
+replicaCount: 8
+maxReplicaCount: 48
+
+resources:
+  requests:
+    memory: "160Mi"
+    cpu: "100m"
+  limits:
+    memory: "720Mi"
+    cpu: "200m"
+
+targetCPUUtilization: 60
+targetMemoryUtilization: 60
+
+image:
+  name: eahrend/image-resizer:latest
+
+strategy:
+  maxSurge: 35%
+  maxUnavailable: 35%
+
+service:
+  type: NodePort
+  port: 8080
+  name: image-resizer-svc
+  targetPort: 8080
+  healthCheck: "/healthcheck"
+
+
+c_env:
+  PORT: 8080
+
+cert:
+  name: img-resizer-cert
+
+ingress:
+  hosts:
+    - !!!REPLACEME!!!!
+  annotations:
+    networking.gke.io/managed-certificates: img-resizer-cert
+    kubernetes.io/ingress.class: "gce"
+    kubernetes.io/ingress.global-static-ip-name: img-resize-ip
